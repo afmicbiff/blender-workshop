@@ -14,3 +14,6 @@ This repo is for building 3D items in Blender, both with Python scripts and by h
   inspect, adjust, and show the user.
 - Save `.blend` sources in `models/` and exported files (.stl, .3mf, .obj, .glb) in `exports/`.
 - The container is temporary: commit and push work before the session ends.
+- Blender here is 4.0 (Ubuntu package): STL export is `bpy.ops.export_mesh.stl(use_selection=True)`,
+  not the newer `bpy.ops.wm.stl_export`.
+- On the desktop, numpad keys (e.g. Numpad . for Frame Selected) may not register; use the View menu.
